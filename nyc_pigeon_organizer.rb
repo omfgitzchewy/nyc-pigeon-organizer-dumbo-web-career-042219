@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
         end
 
         if final[element][attribute].include?(description) == false
-          final[element][attribute] << description
+          final[element][attribute] << description.to_s
         end
       end
     end
