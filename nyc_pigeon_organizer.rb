@@ -5,8 +5,10 @@ def nyc_pigeon_organizer(data)
       arr.each do |element|
         if final.key?(element) == false
           final[element] = {}
+        elsif final[element].key?(attribute)
+          final[element][attribute] = []
         else
-          final[element][attribute] = [description]
+          final[element][attribute] << description
         end
       end
     end
