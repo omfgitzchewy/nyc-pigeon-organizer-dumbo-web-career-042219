@@ -6,11 +6,11 @@ def nyc_pigeon_organizer(data)
         if final.key?(element) == false
           final[element] = {}
         end
-        
+
         if final[element].key?(attribute) == false
           final[element][attribute] = []
-        end 
-        
+        end
+
         if final[element][attribute].include?(description) == false
           final[element][attribute] << description
         end
