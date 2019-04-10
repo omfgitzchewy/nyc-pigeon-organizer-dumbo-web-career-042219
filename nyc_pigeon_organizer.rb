@@ -4,9 +4,9 @@ def nyc_pigeon_organizer(data)
     hash.each do |description, arr|
       arr.each do |element|
         if final.key?(element) == false
-          final[element] = [attribute]
+          final[element] = {}
         else
-          final[element] << description
+          final[element][attribute] = [description]
         end
       end
     end
